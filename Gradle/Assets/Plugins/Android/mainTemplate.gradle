@@ -54,7 +54,7 @@ apply plugin: 'com.android.library'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'ir.tapsell.plus:tapsell-plus-sdk-unity:1.2.1'
+    implementation 'ir.tapsell.plus:tapsell-plus-sdk-unity:1.2.2'
 
     //for adMob
     implementation 'com.google.android.gms:play-services-ads:19.5.0'
