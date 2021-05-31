@@ -24,10 +24,11 @@ android {
         }
         versionCode **VERSIONCODE**
         versionName '**VERSIONNAME**'
+        multiDexEnabled true
     }
 
     aaptOptions {
-        noCompress = ['.unity3d', '.ress', '.resource', '.obb'**STREAMING_ASSETS**]
+        noCompress = ['.ress', '.resource', '.obb'] + unityStreamingAssets.tokenize(', ')
         ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~"
     }**SIGN**
 
@@ -38,13 +39,11 @@ android {
     buildTypes {
         debug {
             minifyEnabled **MINIFY_DEBUG**
-            
             proguardFiles getDefaultProguardFile('proguard-android.txt')**SIGNCONFIG**
             jniDebuggable true
         }
         release {
             minifyEnabled **MINIFY_RELEASE**
-            
             proguardFiles getDefaultProguardFile('proguard-android.txt')**SIGNCONFIG**
         }
     }**PACKAGING_OPTIONS****SPLITS**
