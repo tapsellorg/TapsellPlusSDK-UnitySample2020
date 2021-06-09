@@ -64,7 +64,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3588}
     - Class: 114
-      Script: {instanceID: 15324}
+      Script: {instanceID: 15674}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -576,7 +576,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
-    namespaceName: TapsellPlus
+    namespaceName: TapsellPlusSDK
     className: TapsellPlusMessageHandler
   - hash:
       serializedVersion: 2
@@ -732,7 +732,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
-    namespaceName: TapsellPlus
+    namespaceName: TapsellPlusSDK
     className: ClickHandler
   - hash:
       serializedVersion: 2
